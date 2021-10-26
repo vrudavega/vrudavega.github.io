@@ -70,6 +70,7 @@ img {
   align-self: center;
   padding: 1rem;
   z-index: center;
+  text-align: center;
 }
 
 .hero-heading {
