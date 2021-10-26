@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Awesome Tubular Portfolio</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/glightbox.min.css" />
   </head>
   <body>
     <header class="hero-box">
@@ -18,8 +19,56 @@
       </section>
       <section class="hero-text-box">
         <h1 class="hero-heading">Victoria a a a a a a :) :) :)</h1>
-        <p class="hero-heading">Hello word</p>
+        <p class="hero-text">Hello word</p>
       </section>
     </header>
+    <!-- Begin Portfolio Galerry-->
+    <section class="portfolio-gallery">
+      <h1>Portfolio</h1>
+      <div class="gallery-item">
+        <a
+          href="img/20210915 Ruda Vega Victoria Project 2.2.jpg"
+          class="glightbox"
+        >
+          <img
+            src="img/20210915 Ruda Vega Victoria Project 2.2.jpg"
+            alt="blue zig cafe drawing"
+            class="gallery-img"
+          />
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="img/IMG-9581.jpg" class="glightbox">
+          <img src="img/IMG-9581.jpg" alt="pop of color" class="gallery-item" />
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="img/IMG-9871.jpg" class="glightbox">
+          <img
+            src="img/IMG-9871.jpg"
+            alt="texture drawing"
+            class="gallery-img"
+          />
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="img/IMG-9925.jpg" class="glightbox">
+          <img src="img/IMG-9925.jpg" alt="anita" class="gallery-img" />
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="img/ruda vega victoria design.jpg" class="glightbox">
+          <img
+            src="img/ruda vega victoria design.jpg"
+            alt="lines study"
+            class="gallery-img"
+          />
+        </a>
+      </div>
+    </section>
+    <script src="js/glightbox.min.js"></script>
+    <script type="text/javascript">
+      const lightbox = Glightbox({ loop: true });
+    </script>
   </body>
 </html>
