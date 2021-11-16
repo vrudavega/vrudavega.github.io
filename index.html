@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="css/glightbox.min.css" />
   </head>
   <body>
-    <!--begin navigation-->
-    <nav class="nav-bar top-nav">
+    <!--Begin Navigation-->
+    <nav class="nav-bar top-nav" id="top-nav-bar">
       <h1 class="logo"><a href="index.html">Victoria Ruda Vega</a></h1>
       <ul class="nav-menu">
         <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
         <li class="nav-item"><a href="#about">About</a></li>
         <li class="nav-item social-nav-item">
           <a
-            href="https://www.instagram.com/vickyrudavega/?hl=en"
+            href="https://www.instagram.com/vickyrudavega/"
             aria-label="Link to Instagram"
           >
             <i class="fab fa-instagram" aria-hidden="treue"></i>
@@ -30,7 +30,7 @@
       <section class="hero-image-box">
         <img
           class="hero-image"
-          src="img/victoria Ruda Vega oil painting woman girl .jpg"
+          src="img/foto pintando victoria ruda vega.jpg"
           alt="gurlll"
         />
       </section>
@@ -43,7 +43,6 @@
     <section id="portfolio" class="portfolio-container section-scroll">
       <h1>Portfolio</h1>
     <section class="portfolio-gallery">
-      <h1>Portfolio</h1>
 
       <div class="gallery-item">
         <a
@@ -60,27 +59,18 @@
 
       <div class="gallery-item">
         <a
-          href="img/honeycomb-bee-drawing-victoria-ruda-vega.jpg"
+          href="img/Victoria Ruda Vega bee honeycomb charcol drawing web.jpg"
           class="glightbox"
         >
           <img
-            src="img/honeycomb-bee-drawing-victoria-ruda-vega.jpg"
+            src="img/Victoria Ruda Vega bee honeycomb charcol drawing web.jpg"
             alt="pop of color"
             class="gallery-img"
           />
         </a>
       </div>
 
-      <div class="gallery-item">
-        <a href="img/building-drawing-victoria-ruda-vega.jpg" class="glightbox">
-          <img
-            src="img/building-drawing-victoria-ruda-vega.jpg"
-            alt="building"
-            class="gallery-img"
-          />
-        </a>
-      </div>
-
+    
       <div class="gallery-item">
         <a
           href="img/Victoria Ruda Vega acrylic painting girl woman crying.jpg"
@@ -119,6 +109,17 @@
         </a>
       </div>
 
+
+      <div class="gallery-item">
+        <a href="img/building-drawing-victoria-ruda-vega.jpg" class="glightbox">
+          <img
+            src="img/building-drawing-victoria-ruda-vega.jpg"
+            alt="building"
+            class="gallery-img"
+          />
+        </a>
+      </div>
+
       <div class="gallery-item">
         <a
           href="img/abstract-line-design-victoria-ruda-vega.jpg"
@@ -147,11 +148,11 @@
 
       <div class="gallery-item">
         <a
-          href="img/20211109 Ruda Vega Victoria winter holidays  digital painting.jpg"
+          href="img/IMG-3195.jpg"
           class="glightbox"
         >
           <img
-            src="img/20211109 Ruda Vega Victoria winter holidays  digital painting.jpg"
+            src="img/IMG-3195.jpg"
             alt=""
             class="gallery-img"
           />
@@ -159,14 +160,59 @@
       </div>
 
       <div class="gallery-item">
-        <a href="" class="glightbox">
-          <img src="" alt="" class="gallery-img" />
+        <a href="img/victoria Ruda Vega oil painting woman girl .jpg" class="glightbox">
+          <img src="img/victoria Ruda Vega oil painting woman girl .jpg" alt="" class="gallery-img" />
         </a>
       </div>
+    </section>
+
+
+    <!-- Begin About Section -->
+    <section id="about" class="about-container section-scroll">
+      <section class="about-text">
+        <h1>Cheese it up to Create the Flow</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam
+          veniam distinctio possimus mollitia fuga id vitae laudantium beatae.
+          Reprehenderit impedit, nihil dolorum repudiandae suscipit soluta?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+          sint dolore? Accusamus temporibus beatae neque!
+        </p>
+        <p>Email Mutona at mutonaothenton@gmail.com</p>
+        <section class="about-social">
+          <a
+            href="https://www.instagram.com/vickyrudavega/"
+            aria-label="Link to Instagram"
+          >
+            <i class="fab fa-instagram" aria-hidden="true"></i>
+          </a>
+        </section>
+      </section>
+      <section class="about-image">
+        <img
+          src="img/20211116 Ruda Vega Victoria Vector Portrait Project web-01.jpg"
+          alt="Mutona Othenton Profile Pic"
+        />
+      </section>
     </section>
     <script src="js/glightbox.min.js"></script>
     <script type="text/javascript">
       const lightbox = GLightbox({ loop: true });
+
+      window.onscroll = function(){
+        scrollFunction();
+      }
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("top-nav-bar").style.background = "#000000";
+        }
+        else {
+          document.getElementById("top-nav-bar").style.background = "none";
+        }
+      }
     </script>
   </body>
 </html>
